@@ -7,9 +7,29 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  isModalOpen = false;
+  isModalIdiomasOpen = false;
+  isModalSoftwareOpen = false;
+  isModalLingProgOpen = false;
+  isModalEducationOpen = false;
+  isModalProjectOpen = false;
 
-  setOpen(isOpen: boolean) {
-    this.isModalOpen = isOpen;
+  setOpenIdiomas(isOpen: boolean) {
+    this.isModalIdiomasOpen = isOpen;
+  }
+
+  setOpenSoftware(isOpen: boolean) {
+    this.isModalSoftwareOpen = isOpen;
+  }
+
+  setOpenLingProg(isOpen: boolean) {
+    this.isModalLingProgOpen = isOpen;
+  }
+
+  setOpenEducation(isOpen: boolean) {
+    this.isModalEducationOpen = isOpen;
+  }
+
+  setOpenProject(isOpen: boolean) {
+    this.isModalProjectOpen = isOpen;
   }
 }
