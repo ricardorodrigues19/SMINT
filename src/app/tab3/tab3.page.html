@@ -5,29 +5,38 @@
 </ion-header>
 
 <ion-content class="ion-padding" mode="ios" style="text-align: center">
-  <ion-label>Pode me contactar pelo formulário!</ion-label>
   <form>
-    <ion-item>
-      <ion-label color="medium">Nome</ion-label>
-      <ion-input type="text"  name="title"></ion-input>
+    <ion-item style="text-align: center">
+      <ion-label>Pode me contactar pelo formulário!</ion-label>
     </ion-item>
     <ion-item>
-      <ion-label color="medium">Mensagem</ion-label>
-      <ion-textarea  name="description"></ion-textarea>
+      <ion-label color="medium" position="floating">Email</ion-label>
+      <ion-input type="email" placeholder="Seu email" [clearInput]="true"></ion-input>
     </ion-item>
-    <ion-button type="submit" block (click)="presentAlert()">
+    <ion-item counter="true">
+      <ion-label color="medium" position="floating">Mensagem</ion-label>
+      <ion-input type="text" placeholder="Sua mensagem" [clearInput]="true" maxlength="100"></ion-input>
+    </ion-item>
+    <ion-button type="reset" block (click)="presentAlert()">
       Enviar 
       <ion-icon name="send-sharp" slot="end"></ion-icon>
     </ion-button>
   </form>
-  <ion-card mode="ios" style="text-align: center">
-    <ion-card-content>
-      <ion-text>
-        <h1>Telemóvel</h1>
-        <h2>969696969</h2>
-        <h1>E-mail</h1>
-        <h2>ricardo.r@ipvc.pt</h2>
-      </ion-text>
-    </ion-card-content>
-  </ion-card>
+  <div class="ion-text-center" align-self-end>
+    <ion-button size="medium" href="https://twitter.com/ricardx999" target="blank">
+      <ion-icon name="logo-twitter"></ion-icon>
+    </ion-button>
+    
+    <ion-button size="medium" href="https://www.instagram.com/ricardor.999/" target="blank">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </ion-button>
+
+    <ion-button size="medium" href="https://github.com/ricardorodrigues19" target="blank">
+      <ion-icon name="logo-github"></ion-icon>
+    </ion-button>
+    
+    <ion-button size="medium" href="mailto:ricardo.r@ipvc.pt">
+      <ion-icon name="mail"></ion-icon>
+    </ion-button>
+  </div>
 </ion-content>
