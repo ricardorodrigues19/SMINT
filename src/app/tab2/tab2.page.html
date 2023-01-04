@@ -1,19 +1,18 @@
 <ion-header collapse="condense">
   <ion-toolbar>
-    <ion-title size="large" mode="ios" style="text-align: center">Skills</ion-title>
+    <ion-title size="large" mode="ios" style="text-align: center">{{ 'skills' | translate }}</ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content class="ion-padding" mode="ios" style="text-align: center">
-
-  <ion-button expand="block" (click)="setOpenIdiomas(true)">Idiomas</ion-button>
+<div class="modals">
+  <ion-button expand="block" (click)="setOpenIdiomas(true)">{{ 'l' | translate }}</ion-button>
   <ion-modal [isOpen]="isModalIdiomasOpen">
     <ng-template>
       <ion-header>
         <ion-toolbar>
-          <ion-title>Idiomas</ion-title>
+          <ion-title>{{ 'l' | translate }}</ion-title>
           <ion-buttons slot="end">
-            <ion-button (click)="setOpenIdiomas(false)">Fechar</ion-button>
+            <ion-button (click)="setOpenIdiomas(false)">{{ 'close' | translate }}</ion-button>
           </ion-buttons>
         </ion-toolbar>
       </ion-header>
@@ -21,12 +20,12 @@
         <ion-card-content mode="ios">
           <ion-list>
             <ion-item>
-              <ion-label>Português</ion-label>
-              <ion-card-subtitle>Nativo</ion-card-subtitle>
+              <ion-label>{{ 'l1' | translate }}</ion-label>
+              <ion-card-subtitle>{{ 'll1' | translate }}</ion-card-subtitle>
             </ion-item>
             <ion-item lines="none">
-              <ion-label>Inglês</ion-label>
-              <ion-card-subtitle>Fluente</ion-card-subtitle>
+              <ion-label>{{ 'l2' | translate }}</ion-label>
+              <ion-card-subtitle>{{ 'll2' | translate }}</ion-card-subtitle>
             </ion-item>
           </ion-list>
         </ion-card-content>
@@ -36,14 +35,14 @@
 
   <p></p>
 
-  <ion-button expand="block" (click)="setOpenSoftware(true)">Software</ion-button>
+  <ion-button expand="block" (click)="setOpenSoftware(true)">{{ 's' | translate }}</ion-button>
   <ion-modal [isOpen]="isModalSoftwareOpen">
     <ng-template>
       <ion-header>
         <ion-toolbar>
-          <ion-title>Software</ion-title>
+          <ion-title>{{ 's' | translate }}</ion-title>
           <ion-buttons slot="end">
-            <ion-button (click)="setOpenSoftware(false)">Fechar</ion-button>
+            <ion-button (click)="setOpenSoftware(false)">{{ 'close' | translate }}</ion-button>
           </ion-buttons>
         </ion-toolbar>
       </ion-header>
@@ -51,22 +50,22 @@
         <ion-card-content mode="ios">
           <ion-list>
             <ion-item>
-              <ion-label>Photoshop</ion-label>
+              <ion-label>{{ 's1' | translate }}</ion-label>
             </ion-item>
             <ion-item>
-              <ion-label>Illustrator</ion-label>
+              <ion-label>{{ 's2' | translate }}</ion-label>
             </ion-item>
             <ion-item>
-              <ion-label>Premiere</ion-label>
+              <ion-label>{{ 's3' | translate }}</ion-label>
             </ion-item>
             <ion-item>
-              <ion-label>After Effects</ion-label>
+              <ion-label>{{ 's4' | translate }}</ion-label>
             </ion-item>
             <ion-item>
-              <ion-label>Maya</ion-label>
+              <ion-label>{{ 's5' | translate }}</ion-label>
             </ion-item>
             <ion-item lines="none">
-              <ion-label>Blender</ion-label>
+              <ion-label>{{ 's6' | translate }}</ion-label>
             </ion-item>
           </ion-list>
         </ion-card-content>
@@ -76,14 +75,14 @@
 
   <p></p>
 
-  <ion-button expand="block" (click)="setOpenLingProg(true)">Linguagens Programação</ion-button>
+  <ion-button expand="block" (click)="setOpenLingProg(true)">{{ 'lp' | translate }}</ion-button>
   <ion-modal [isOpen]="isModalLingProgOpen">
     <ng-template>
       <ion-header>
         <ion-toolbar>
-          <ion-title>Linguagens Programação</ion-title>
+          <ion-title>{{ 'lp' | translate }}</ion-title>
           <ion-buttons slot="end">
-            <ion-button (click)="setOpenLingProg(false)">Fechar</ion-button>
+            <ion-button (click)="setOpenLingProg(false)">{{ 'close' | translate }}</ion-button>
           </ion-buttons>
         </ion-toolbar>
       </ion-header>
@@ -91,22 +90,22 @@
         <ion-card-content mode="ios">
           <ion-list>
             <ion-item>
-              <ion-label>HTML</ion-label>
+              <ion-label>{{ 'lp1' | translate }}</ion-label>
             </ion-item>
             <ion-item>
-              <ion-label>CSS</ion-label>
+              <ion-label>{{ 'lp2' | translate }}</ion-label>
             </ion-item>
             <ion-item>
-              <ion-label>PHP</ion-label>
+              <ion-label>{{ 'lp3' | translate }}</ion-label>
             </ion-item>
             <ion-item>
-              <ion-label>JavaScript</ion-label>
+              <ion-label>{{ 'lp4' | translate }}</ion-label>
             </ion-item>
             <ion-item>
-              <ion-label>React</ion-label>
+              <ion-label>{{ 'lp5' | translate }}</ion-label>
             </ion-item>
             <ion-item lines="none">
-              <ion-label>Angular</ion-label>
+              <ion-label>{{ 'lp6' | translate }}</ion-label>
             </ion-item>
           </ion-list>
         </ion-card-content>
@@ -116,14 +115,14 @@
 
   <p></p>
 
-  <ion-button expand="block" (click)="setOpenEducation(true)">Educação</ion-button>
+  <ion-button expand="block" (click)="setOpenEducation(true)">{{ 'e' | translate }}</ion-button>
   <ion-modal [isOpen]="isModalEducationOpen">
     <ng-template>
       <ion-header>
         <ion-toolbar>
-          <ion-title>Educação</ion-title>
+          <ion-title>{{ 'e' | translate }}</ion-title>
           <ion-buttons slot="end">
-            <ion-button (click)="setOpenEducation(false)">Fechar</ion-button>
+            <ion-button (click)="setOpenEducation(false)">{{ 'close' | translate }}</ion-button>
           </ion-buttons>
         </ion-toolbar>
       </ion-header>
@@ -131,16 +130,16 @@
         <ion-card-content mode="ios">
           <ion-list>
             <ion-item>
-              <ion-label>9º Ano</ion-label>
-              <ion-card-subtitle>EBSB</ion-card-subtitle>
+              <ion-label>{{ 'e1' | translate }}</ion-label>
+              <ion-card-subtitle>{{ 'e1a' | translate }}</ion-card-subtitle>
             </ion-item>
             <ion-item>
-              <ion-label>Técnico de Multimédia</ion-label>
-              <ion-card-subtitle>ESM</ion-card-subtitle>
+              <ion-label>{{ 'e2' | translate }}</ion-label>
+              <ion-card-subtitle>{{ 'e2a' | translate }}</ion-card-subtitle>
             </ion-item>
             <ion-item lines="none">
-              <ion-label>Desenvolv. Web e Multimédia</ion-label>
-              <ion-card-subtitle>IPVC</ion-card-subtitle>
+              <ion-label>{{ 'e3' | translate }}</ion-label>
+              <ion-card-subtitle>{{ 'e3a' | translate }}</ion-card-subtitle>
             </ion-item>
           </ion-list>
         </ion-card-content>
@@ -150,14 +149,14 @@
 
   <p></p>
 
-  <ion-button expand="block" (click)="setOpenProject(true)">Projetos</ion-button>
+  <ion-button expand="block" (click)="setOpenProject(true)">{{ 'p' | translate }}</ion-button>
   <ion-modal [isOpen]="isModalProjectOpen">
     <ng-template>
       <ion-header>
         <ion-toolbar>
-          <ion-title>Projetos</ion-title>
+          <ion-title>{{ 'p' | translate }}</ion-title>
           <ion-buttons slot="end">
-            <ion-button (click)="setOpenProject(false)">Fechar</ion-button>
+            <ion-button (click)="setOpenProject(false)">{{ 'close' | translate }}</ion-button>
           </ion-buttons>
         </ion-toolbar>
       </ion-header>
@@ -165,37 +164,41 @@
         <ion-card-content mode="ios">
           <ion-list>
             <ion-item>
-              <ion-label>Portfólio Pessoal - Bootstrap</ion-label>
-              <ion-card-subtitle>ESM</ion-card-subtitle>
+              <ion-label>{{ 'p1' | translate }}</ion-label>
+              <ion-card-subtitle>{{ 'p1a' | translate }}</ion-card-subtitle>
             </ion-item>
             <ion-item>
-              <ion-label>PAP - Videoclipe (Nota 20)</ion-label>
-              <ion-card-subtitle>ESM</ion-card-subtitle>
+              <ion-label>{{ 'p2' | translate }}</ion-label>
+              <ion-card-subtitle>{{ 'p2a' | translate }}</ion-card-subtitle>
             </ion-item>
             <ion-item>
-              <ion-label>Caixa ATM - Javascript</ion-label>
-              <ion-card-subtitle>IPVC</ion-card-subtitle>
+              <ion-label>{{ 'p3' | translate }}</ion-label>
+              <ion-card-subtitle>{{ 'p3a' | translate }}</ion-card-subtitle>
             </ion-item>
             <ion-item>
-              <ion-label>Base de Dados</ion-label>
-              <ion-card-subtitle>IPVC</ion-card-subtitle>
+              <ion-label>{{ 'p4' | translate }}</ion-label>
+              <ion-card-subtitle>{{ 'p4a' | translate }}</ion-card-subtitle>
             </ion-item>
             <ion-item>
-              <ion-label>Vídeo Promocional Portátil</ion-label>
-              <ion-card-subtitle>IPVC</ion-card-subtitle>
+              <ion-label>{{ 'p5' | translate }}</ion-label>
+              <ion-card-subtitle>{{ 'p5a' | translate }}</ion-card-subtitle>
             </ion-item>
             <ion-item>
-              <ion-label>Loja Online no Shopify</ion-label>
-              <ion-card-subtitle>IPVC</ion-card-subtitle>
+              <ion-label>{{ 'p6' | translate }}</ion-label>
+              <ion-card-subtitle>{{ 'p6a' | translate }}</ion-card-subtitle>
+            </ion-item>
+            <ion-item>
+              <ion-label>{{ 'p7' | translate }}</ion-label>
+              <ion-card-subtitle>{{ 'p7a' | translate }}</ion-card-subtitle>
             </ion-item>
             <ion-item lines="none">
-              <ion-label>Aplicação Web</ion-label>
-              <ion-card-subtitle>IPVC</ion-card-subtitle>
+              <ion-label>{{ 'p8' | translate }}</ion-label>
+              <ion-card-subtitle>{{ 'p8a' | translate }}</ion-card-subtitle>
             </ion-item>
           </ion-list>
         </ion-card-content>
       </ion-content>
     </ng-template>
   </ion-modal>
-
+</div>
 </ion-content>

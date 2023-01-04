@@ -1,24 +1,28 @@
 <ion-header collapse="condense">
   <ion-toolbar>
-    <ion-title size="large" mode="ios" style="text-align: center">Contacto</ion-title>
+    <ion-title size="large" mode="ios" style="text-align: center">{{ 'contact' | translate }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding" mode="ios" style="text-align: center">
   <form>
     <ion-item style="text-align: center">
-      <ion-label>Pode me contactar pelo formulário!</ion-label>
+      <ion-label>{{ 'c1' | translate }}</ion-label>
     </ion-item>
     <ion-item>
-      <ion-label color="medium" position="floating">Email</ion-label>
-      <ion-input type="email" placeholder="Seu email" [clearInput]="true"></ion-input>
+      <ion-label color="medium" position="floating">{{ 'form1' | translate }}</ion-label>
+      <ion-input type="text" placeholder="{{ 'form1a' | translate }}" [clearInput]="true"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="medium" position="floating">{{ 'form2' | translate }}</ion-label>
+      <ion-input type="email" placeholder="{{ 'form2a' | translate }}" [clearInput]="true"></ion-input>
     </ion-item>
     <ion-item counter="true">
-      <ion-label color="medium" position="floating">Mensagem</ion-label>
-      <ion-input type="text" placeholder="Sua mensagem" [clearInput]="true" maxlength="100"></ion-input>
+      <ion-label color="medium" position="floating">{{ 'form3' | translate }}</ion-label>
+      <ion-input type="text" placeholder="{{ 'form3a' | translate }}" [clearInput]="true" maxlength="100"></ion-input>
     </ion-item>
     <ion-button type="reset" block (click)="presentAlert()">
-      Enviar 
+      {{ 'send' | translate }}
       <ion-icon name="send-sharp" slot="end"></ion-icon>
     </ion-button>
   </form>

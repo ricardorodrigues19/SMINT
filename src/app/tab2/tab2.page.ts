@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-tab2',
@@ -12,6 +12,17 @@ export class Tab2Page {
   isModalLingProgOpen = false;
   isModalEducationOpen = false;
   isModalProjectOpen = false;
+
+  @HostListener('document:keydown.escape', ['$event'])
+  handleModal1Keydown(event: KeyboardEvent) {
+    this.isModalIdiomasOpen = false;
+    this.isModalSoftwareOpen = false;
+    this.isModalLingProgOpen = false;
+    this.isModalEducationOpen = false;
+    this.isModalProjectOpen = false;
+  }
+
+  darkMode: boolean = false;
 
   setOpenIdiomas(isOpen: boolean) {
     this.isModalIdiomasOpen = isOpen;
@@ -28,8 +39,11 @@ export class Tab2Page {
   setOpenEducation(isOpen: boolean) {
     this.isModalEducationOpen = isOpen;
   }
-
   setOpenProject(isOpen: boolean) {
     this.isModalProjectOpen = isOpen;
+  }
+
+  toggleTheme(ev: any): void {
+    document.body.classList.toggle('dark', ev.detail.checked);
   }
 }

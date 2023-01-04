@@ -1,16 +1,15 @@
-<ion-content [fullscreen]="true">
-  <ion-card mode="ios" style="text-align: center">
+
+<ion-content [fullscreen]="true" class="toolbar">
+  <ion-card class="cardimg" mode="ios" style="text-align: center">
     <img alt="Ricardo Rodriges" src="../../assets/images/profileimg.png" />
     <ion-card-header style="text-align: center">
       <ion-card-title>Ricardo Rodrigues</ion-card-title>
-      <ion-card-subtitle>Estudante DWM</ion-card-subtitle>
+      <ion-card-subtitle>{{ 'subtitle' | translate }}</ion-card-subtitle>
     </ion-card-header>
   </ion-card>
   <ion-card class="ion-padding" mode="ios" style="text-align: justify">
     <ion-card-content>
-      Tenho 19 anos, vivo em Fragoso e realizei o curso profissional Técnico de Multimédia na Escola Secundária de Monserrate 
-      e atualmente estou a concluir o cTesp em Desenvolvimento Web e Multimédia no Instituto Politécnico de Viana do Castelo. 
-      Futuramente pretendo ingressar numa licenciatura realionada com a área de gestão!
+      {{ 'abouttext' | translate }}
     </ion-card-content>
   </ion-card>
 </ion-content>
