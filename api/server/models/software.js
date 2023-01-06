@@ -1,7 +1,7 @@
 import Sequelize from "sequelize";
 import { dbInstance } from "../config/db.js";
 
-const SoftwareModule = dbInstance.define("Software", {
+const SoftwareModule = dbInstance.define("software", {
   id: {
     type: Sequelize.INTEGER,
     autoIncrement: true,

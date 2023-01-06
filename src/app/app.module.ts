@@ -17,7 +17,8 @@ export function createTranslateLoader(http: HttpClient) {
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule,
+  imports: [
+    BrowserModule,
     IonicModule.forRoot({mode:"ios"}),
     AppRoutingModule,
     HttpClientModule,

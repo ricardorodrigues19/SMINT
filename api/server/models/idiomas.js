@@ -1,7 +1,7 @@
 import Sequelize from "sequelize";
 import { dbInstance } from "../config/db.js";
 
-const IdiomasModule = dbInstance.define("Idiomas", {
+const IdiomasModule = dbInstance.define("idiomas", {
   id: {
     type: Sequelize.INTEGER,
     autoIncrement: true,
