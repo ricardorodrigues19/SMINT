@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, HostListener } from '@angular/core';
 
 @Component({
@@ -46,4 +47,19 @@ export class Tab2Page {
   toggleTheme(ev: any): void {
     document.body.classList.toggle('dark', ev.detail.checked);
   }
+  
+  constructor(private http: HttpClient) {}
+
+  async getIdiomas() {
+    try {
+      const Idiomas = await this.http.get('http://localhost:4242/api/Idiomas').toPromise();
+      console.log(Idiomas);
+    } catch(error) {
+      console.error(error);
+    }
+  }
 }
+  
+  
+  
+  

@@ -57,6 +57,8 @@
     "form3a": "Sua mensagem",
     "send": "Enviar",
     "alert": "Alerta!",
-    "ms": "Mensagem não enviada com sucesso! FAKE",
-    "ok": "OK"
-} 
+    "ms": "Mensagem não enviada com sucesso!",
+    "ok": "OK",
+    "socials": "As minhas redes sociais!",
+    "skillstext": "Nesta página podem encontrar um resumo das minhas skills!"
+}

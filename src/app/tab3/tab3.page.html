@@ -19,7 +19,7 @@
     </ion-item>
     <ion-item counter="true">
       <ion-label color="medium" position="floating">{{ 'form3' | translate }}</ion-label>
-      <ion-input type="text" placeholder="{{ 'form3a' | translate }}" [clearInput]="true" maxlength="100"></ion-input>
+      <ion-input type="text" placeholder="{{ 'form3a' | translate }}" [clearInput]="true" maxlength="250"></ion-input>
     </ion-item>
     <ion-button type="reset" block (click)="presentAlert()">
       {{ 'send' | translate }}
@@ -27,6 +27,7 @@
     </ion-button>
   </form>
   <div class="ion-text-center" align-self-end>
+    <h3>{{ 'socials' | translate }}</h3>
     <ion-button size="medium" href="https://twitter.com/ricardx999" target="blank">
       <ion-icon name="logo-twitter"></ion-icon>
     </ion-button>
