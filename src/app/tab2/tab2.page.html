@@ -20,13 +20,9 @@
       <ion-content class="ion-padding" mode="ios">
         <ion-card-content mode="ios">
           <ion-list>
-            <ion-item>
-              <ion-label>{{ 'l1' | translate }}</ion-label>
-              <ion-card-subtitle>{{ 'll1' | translate }}</ion-card-subtitle>
-            </ion-item>
-            <ion-item lines="none">
-              <ion-label>{{ 'l2' | translate }}</ion-label>
-              <ion-card-subtitle>{{ 'll2' | translate }}</ion-card-subtitle>
+            <ion-item *ngFor="let item of idiomas">
+              <ion-label>{{item.title}}</ion-label>
+              <ion-card-subtitle>{{item.description}}</ion-card-subtitle>
             </ion-item>
           </ion-list>
         </ion-card-content>
@@ -50,23 +46,9 @@
       <ion-content class="ion-padding" mode="ios">
         <ion-card-content mode="ios">
           <ion-list>
-            <ion-item>
-              <ion-label>{{ 's1' | translate }}</ion-label>
-            </ion-item>
-            <ion-item>
-              <ion-label>{{ 's2' | translate }}</ion-label>
-            </ion-item>
-            <ion-item>
-              <ion-label>{{ 's3' | translate }}</ion-label>
-            </ion-item>
-            <ion-item>
-              <ion-label>{{ 's4' | translate }}</ion-label>
-            </ion-item>
-            <ion-item>
-              <ion-label>{{ 's5' | translate }}</ion-label>
-            </ion-item>
-            <ion-item lines="none">
-              <ion-label>{{ 's6' | translate }}</ion-label>
+            <ion-item *ngFor="let item of software">
+              <ion-label>{{item.title}}</ion-label>
+              <ion-card-subtitle>{{item.description}}</ion-card-subtitle>
             </ion-item>
           </ion-list>
         </ion-card-content>
@@ -90,23 +72,9 @@
       <ion-content class="ion-padding" mode="ios">
         <ion-card-content mode="ios">
           <ion-list>
-            <ion-item>
-              <ion-label>{{ 'lp1' | translate }}</ion-label>
-            </ion-item>
-            <ion-item>
-              <ion-label>{{ 'lp2' | translate }}</ion-label>
-            </ion-item>
-            <ion-item>
-              <ion-label>{{ 'lp3' | translate }}</ion-label>
-            </ion-item>
-            <ion-item>
-              <ion-label>{{ 'lp4' | translate }}</ion-label>
-            </ion-item>
-            <ion-item>
-              <ion-label>{{ 'lp5' | translate }}</ion-label>
-            </ion-item>
-            <ion-item lines="none">
-              <ion-label>{{ 'lp6' | translate }}</ion-label>
+            <ion-item *ngFor="let item of lingprog">
+              <ion-label>{{item.title}}</ion-label>
+              <ion-card-subtitle>{{item.description}}</ion-card-subtitle>
             </ion-item>
           </ion-list>
         </ion-card-content>
@@ -130,17 +98,9 @@
       <ion-content class="ion-padding" mode="ios">
         <ion-card-content mode="ios">
           <ion-list>
-            <ion-item>
-              <ion-label>{{ 'e1' | translate }}</ion-label>
-              <ion-card-subtitle>{{ 'e1a' | translate }}</ion-card-subtitle>
-            </ion-item>
-            <ion-item>
-              <ion-label>{{ 'e2' | translate }}</ion-label>
-              <ion-card-subtitle>{{ 'e2a' | translate }}</ion-card-subtitle>
-            </ion-item>
-            <ion-item lines="none">
-              <ion-label>{{ 'e3' | translate }}</ion-label>
-              <ion-card-subtitle>{{ 'e3a' | translate }}</ion-card-subtitle>
+            <ion-item *ngFor="let item of educacao">
+              <ion-label>{{item.title}}</ion-label>
+              <ion-card-subtitle>{{item.type}} - {{item.description}}</ion-card-subtitle>
             </ion-item>
           </ion-list>
         </ion-card-content>
@@ -164,37 +124,9 @@
       <ion-content class="ion-padding" mode="ios">
         <ion-card-content mode="ios">
           <ion-list>
-            <ion-item>
-              <ion-label>{{ 'p1' | translate }}</ion-label>
-              <ion-card-subtitle>{{ 'p1a' | translate }}</ion-card-subtitle>
-            </ion-item>
-            <ion-item>
-              <ion-label>{{ 'p2' | translate }}</ion-label>
-              <ion-card-subtitle>{{ 'p2a' | translate }}</ion-card-subtitle>
-            </ion-item>
-            <ion-item>
-              <ion-label>{{ 'p3' | translate }}</ion-label>
-              <ion-card-subtitle>{{ 'p3a' | translate }}</ion-card-subtitle>
-            </ion-item>
-            <ion-item>
-              <ion-label>{{ 'p4' | translate }}</ion-label>
-              <ion-card-subtitle>{{ 'p4a' | translate }}</ion-card-subtitle>
-            </ion-item>
-            <ion-item>
-              <ion-label>{{ 'p5' | translate }}</ion-label>
-              <ion-card-subtitle>{{ 'p5a' | translate }}</ion-card-subtitle>
-            </ion-item>
-            <ion-item>
-              <ion-label>{{ 'p6' | translate }}</ion-label>
-              <ion-card-subtitle>{{ 'p6a' | translate }}</ion-card-subtitle>
-            </ion-item>
-            <ion-item>
-              <ion-label>{{ 'p7' | translate }}</ion-label>
-              <ion-card-subtitle>{{ 'p7a' | translate }}</ion-card-subtitle>
-            </ion-item>
-            <ion-item lines="none">
-              <ion-label>{{ 'p8' | translate }}</ion-label>
-              <ion-card-subtitle>{{ 'p8a' | translate }}</ion-card-subtitle>
+            <ion-item *ngFor="let item of projects">
+              <ion-label>{{item.title}}</ion-label>
+              <ion-card-subtitle>{{item.description}}</ion-card-subtitle>
             </ion-item>
           </ion-list>
         </ion-card-content>
